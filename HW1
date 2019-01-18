@@ -34,3 +34,44 @@ public class Main {
         }
     }
 }
+
+//Задание 3
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a=20;
+        int b=10;
+        double c = Math.sqrt(a*a + b*b);
+        Scanner sc = new Scanner(System.in);
+        int r = sc.nextInt();
+        int d = r*2;
+        if (r<c){
+            System.out.println("Не покрывает");
+        }
+else {
+        System.out.println("Покрывает");
+    }
+}}
+
+//Задание 4
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int money = sc.nextInt();
+
+        if (money %10==0){
+            System.out.println(money+" рублей");
+        }
+else {
+        System.out.println(" рубля");
+    }
+}}
+
+
+//Задание 5
