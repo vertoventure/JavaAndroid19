@@ -1,0 +1,19 @@
+# JavaAndroid19
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+String text = "This is impossible";
+int result = text.length();
+
+        System.out.println(result);
+        int half = result/2;
+        String[] parts = {
+                text.substring(0, half),
+                text.substring(half),
+        };
+
+        System.out.println(Arrays.toString(parts));
+    }
+}
