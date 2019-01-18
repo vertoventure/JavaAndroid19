@@ -75,3 +75,12 @@ else {
 
 
 //Задание 5
+public class Main {
+
+    public static void main(String[] args) {
+
+        String Str = new String ("Привет (англ.) - ?");
+        System.out.println(Str.replace('?', 'H'));
+        //вопрос: как заменить строку слова "HELLO", а не только один символ
+        //??? System.out.println(Str.replaceAll('#', ' '));
+}}
