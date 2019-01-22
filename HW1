@@ -65,13 +65,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int money = sc.nextInt();
 
-        if (money %10==0){
+        if (money %10==1 && money !=11){
+            System.out.println(money+" рубль");
+        }
+        else if (money %10==2 || money %10==3 || money %10==4 )
+        {
+            System.out.println(money+" рубля");
+        }
+
+            else
+            {
             System.out.println(money+" рублей");
         }
-else {
-        System.out.println(" рубля");
-    }
-}}
+    }}
+
 
 
 //Задание 5
