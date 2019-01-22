@@ -27,7 +27,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
-        if (i % 10 == 7) {
+        if (Math.abs(i) % 10 == 7) {
             System.out.println("Последняя цифра числа - семерка");
         } else {
             System.out.println("Последняя цифра числа не 7.");
