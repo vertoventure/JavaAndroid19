@@ -73,4 +73,32 @@ public class HW23 {
 }
 
 //Задание 4
+import java.util.Arrays;
+
+public class HW24 {
+    public static void main(String[] args) {
+        int n=1238;
+        int a=n/1000;
+        int b=n/100%10;
+        int c=n/10%10;
+        int d=n/1%10;
+        int mas[] = new int[]{a,b,c,d};
+
+        boolean flag = true;
+        for (int i = 1; i < mas.length; i++) {
+            if(mas[i]<=mas[i-1]){
+                flag = false;
+                break;
+            }
+        }
+        if(flag){
+            System.out.println("Массив является строго возрастающей последовательностью");
+        } else {
+            System.out.println("Массив не является строго возрастающей последовательностью");
+        }
+    }
+}
+//прога не работает. суть в том, что я хотела поделить число на массив из цифр и сравнить цифры, записанные в переменные a..d. 
+
+//Задание 5
 
