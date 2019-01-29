@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        int mass[] = new int[]{2,14,25,6,13};
+        int mass[] = new int[]{2,14,25,6,13,66,45,32,89,54};
         int min= mass[0];
         for (int i=0; i<mass.length; i++) {
             if (min > mass[i]) {
@@ -16,7 +16,8 @@ public class Main {
                 max = mass[i];
 
             }
-
         }
-        System.out.println("Maximum value is " + max+"\n" +"Minimum value is "+min);
+
+        System.out.println("Maximum value is " + max+"\n" +"Minimum value is "+min+"\n"+ Arrays.toString(mass));
+
     }}
