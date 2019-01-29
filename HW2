@@ -21,3 +21,41 @@ public class Main {
         System.out.println("Maximum value is " + max+"\n" +"Minimum value is "+min+"\n"+ Arrays.toString(mass));
 
     }}
+
+//Задание 2
+public class Hw22 {
+    public static void main(String[] args) {
+         float mass[]={2.5F,1.0F,5.0F,7.0F,4.0F,9.5F,4.0F,1.0F,5.0F,4.0F};
+         float n=0;
+         int countRepeat=0;
+         int maxRepeat=0;
+         for (int i=0; i<mass.length;i++)
+         {
+             countRepeat=1;
+             for (int j=i+1; j<mass.length; j++){
+             n=mass[i];
+             if (mass[i]==mass[j] && (j !=i)) {
+                 countRepeat++;
+             }}
+             if ((maxRepeat <=countRepeat) && (countRepeat!=1)) {
+                 maxRepeat = countRepeat;
+                 System.out.println("Число " + n + " встречается " + maxRepeat + " раза");
+             }
+
+             else if (maxRepeat<=1){
+                 System.out.println("Повторений не обнаружено.");
+             }
+
+         }
+    }
+}
+/*Выводит:
+Повторений не обнаружено.
+Число 1.0 встречается 2 раза
+Число 5.0 встречается 2 раза
+Число 4.0 встречается 3 раза
+Вопрос: почему выводит первой строкой "Повторений не обнаружено"? */
+
+//Задание 3
+
+
