@@ -21,6 +21,7 @@ public class Main {
         System.out.println("Maximum value is " + max+"\n" +"Minimum value is "+min+"\n"+ Arrays.toString(mass));
 
     }}
+    //Для того, чтобы выполнился последний пункт, надо найти индекс расположения min и max в массиве и сделать Replace? Я не могу понять, как найти индекс уже полученных значений min  и max.
 
 //Задание 2
 public class Hw22 {
