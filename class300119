@@ -1,0 +1,41 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+//int n читывается с клавы; =5, создать массив размера н, заполнить его рандомными знач от  -н до н включительно, вывести, инвертировать и вывести 2 способом, сортировка пузырьком и вывести 3 способом
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int mass[]= new int[n];
+        for (int i=0; i<mass.length; i++) {
+            mass[i] = (int) (Math.random() * ((n - (-n) + 1) + n));
+
+            System.out.print(mass[i] + " ");
+
+        }
+        System.out.println();
+        for (int j=1; j<=mass.length; j++)
+        {
+            System.out.print(mass[mass.length-j]+ " ");
+
+        }
+        System.out.println();
+        for (int k=mass.length-1; k>0; k--)
+        {
+            for (int m=0; m<k; m++)
+            {
+                if (mass[m]>mass[m+1]){
+                    int tmp = mass[m];
+                    mass[m]=mass[m+1];
+                    mass[m+1]=tmp;
+                }
+
+            }
+        }
+        for (int value : mass)
+            System.out.print(value + " ");
+    }
+}
